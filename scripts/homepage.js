@@ -44,3 +44,53 @@ btnClose.addEventListener('click', closeMobileMenu);
 media.addEventListener('change', function (e) {
   setupTopNav(e);
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const courses = [
+    { name: 'CSE 110', category: 'CSE', credits: 3, completed: true },
+    { name: 'WDD 130', category: 'WDD', credits: 3, completed: true },
+    { name: 'CSE 111', category: 'CSE', credits: 4, completed: true },
+    { name: 'CSE 210', category: 'CSE', credits: 4, completed: true },
+    { name: 'WDD 131', category: 'WDD', credits: 3, completed: true },
+    { name: 'WDD 231', category: 'WDD', credits: 3, completed: false },
+  ];
+
+  const courseList = document.getElementById('course-list');
+  const creditCount = document.getElementById('credit-count');
+  const filterButtons = document.querySelectorAll('.buttons button');
+
+  function renderCourses(filter = 'all') {
+    courseList.innerHTML = '';
+    const filteredCourses =
+      filter === 'all'
+        ? courses
+        : courses.filter(course => course.category === filter);
+
+    filteredCourses.forEach(course => {
+      const courseDiv = document.createElement('div');
+      courseDiv.className = 'course';
+      courseDiv.textContent = course.name;
+      if (course.completed) {
+        courseDiv.style.backgroundColor = '#4caf50';
+        courseDiv.style.color = '#ffffff';
+      }
+      courseList.appendChild(courseDiv);
+    });
+
+    updateCredits(filteredCourses);
+  }
+
+  function updateCredits(filteredCourses) {
+    const totalCredits = filteredCourses.reduce((total, course) => total + course.credits, 0);
+    creditCount.textContent = `Total Credits: ${totalCredits}`;
+  }
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      renderCourses(button.getAttribute('data-filter'));
+    });
+  });
+
+  renderCourses();
+});

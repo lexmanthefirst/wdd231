@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,10 +10,10 @@
       name="keywords"
       content="Homepage, WDD231, Alex Okhitoya, nav menu, course, certificate, Nigeria, boxing, fighters, Kano, Web and Computer Programming Certificate, CSE, WDD, CSE 110, WDD 130, CSE 111, CSE 210, WDD 131, WDD 231">
     <script src="scripts/homepage.js" defer></script>
-    <script src="scripts/getdates.js"></script>
+    <script src="scripts/getdates.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/homepage.css">
-    <title>WDD231|Homepage-Alex Okhitoya</title>
+    <title>WDD231 | Homepage - Alex Okhitoya</title>
   </head>
   <body>
     <header class="topnav wrapper">
@@ -20,23 +21,22 @@
         <h1>Alex Okhitoya</h1>
       </div>
       <nav>
-        <span id="nav-label" hidden>Navigation</span>
         <button
           id="btnOpen"
           class="topnav_open"
           aria-expanded="false"
-          aria-labelledby="nav-label"
+          aria-label="Open Navigation Menu"
         >
           <img
             src="/wdd231/images/hamburger.svg"
-            alt=""
+            alt="Open Menu"
             width="40"
             height="40"
           />
         </button>
-        <div class="topnav_menu" role="dialog" aria-labelledby="nav-label">
-          <button id="btnClose" class="topnav_close" aria-label="close">
-            <img src="/wdd231/images/close.svg" alt="" width="28" height="27" />
+        <div class="topnav_menu" role="dialog" aria-label="Navigation Menu">
+          <button id="btnClose" class="topnav_close" aria-label="Close Navigation Menu">
+            <img src="/wdd231/images/close.svg" alt="Close Menu" width="28" height="27" />
           </button>
           <ul class="topnav_links">
             <li class="topnav_item">
@@ -46,16 +46,10 @@
               <a href="#" class="topnav_link">Chamber</a>
             </li>
             <li class="topnav_item">
-              <a href="https://github.com/lexmanthefirst" class="topnav_link"
-                >GitHub Profile</a
-              >
+              <a href="https://github.com/lexmanthefirst" class="topnav_link">GitHub Profile</a>
             </li>
             <li class="topnav_item">
-              <a
-                href="https://linkedin.com/in//alex-okhitoya"
-                class="topnav_link"
-                >LinkedIn</a
-              >
+              <a href="https://linkedin.com/in/alex-okhitoya" class="topnav_link">LinkedIn</a>
             </li>
           </ul>
         </div>
@@ -65,15 +59,16 @@
       <section class="main">
         <div class="coursework" aria-labelledby="coursework-heading">
           <h2 id="coursework-heading">Course Work</h2>
-          <ul>
+          <ul id="coursework-list">
             <li>BUS303</li>
             <li>WDD231</li>
+
           </ul>
         </div>
 
         <div class="location" aria-labelledby="location-heading">
           <h2 id="location-heading">Kano, Nigeria</h2>
-          <figure class="hover">
+          <figure>
             <picture>
               <source
                 srcset="/wdd231/images/naija-boxing-medium.jpg"
@@ -87,7 +82,7 @@
                 src="/wdd231/images/naija-boxing-small.jpg"
                 width="323"
                 height="423"
-                alt="Two Nigerian's in a boxing contest">
+                alt="Two Nigerians in a boxing contest">
             </picture>
             <figcaption>Nigerian Fighters</figcaption>
           </figure>
@@ -95,25 +90,17 @@
       </section>
 
       <section class="certificate" aria-labelledby="certificate-heading">
-        <h2 id="certificate-heading">
-          Web and Computer Programming Certificate
-        </h2>
+        <h2 id="certificate-heading">Web and Computer Programming Certificate</h2>
         <div class="buttons" role="group" aria-label="Course Filter Buttons">
-          <button>All</button>
-          <button>CSE</button>
-          <button>WDD</button>
+          <button data-filter="all">All</button>
+          <button data-filter="CSE">CSE</button>
+          <button data-filter="WDD">WDD</button>
         </div>
-        <div class="courses" aria-live="polite">
-          <div class="course" tabindex="0">CSE 110</div>
-          <div class="course" tabindex="0">WDD 130</div>
-          <div class="course" tabindex="0">CSE 111</div>
-          <div class="course" tabindex="0">CSE 210</div>
-          <div class="course" tabindex="0">WDD 131</div>
-          <div class="course" tabindex="0">WDD 231</div>
-        </div>
+        <div class="courses" aria-live="polite" id="course-list"></div>
+        <p id="credit-count"></p>
       </section>
     </main>
-    <footer aria-labelledby="footer label">
+    <footer>
       <p id="copywrite"></p>
       <p id="modified"></p>
     </footer>

@@ -239,6 +239,11 @@ button:focus, .course:focus, a:focus {
   outline: 2px solid yellow;
 }
 
+#credit-count{
+  font-size: 1em;
+  margin-bottom: 10px;
+  color: #000;
+}
 /* Responsive Design */
 @media (max-width: 48em) {
   .main {
