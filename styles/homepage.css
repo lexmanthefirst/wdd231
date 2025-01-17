@@ -9,11 +9,11 @@
 }
 
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: "Tektur";
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/tektur-v3-latin-800.woff2") format("woff2"); 
+  src: url("/fonts/tektur-v3-latin-800.woff2") format("woff2");
 }
 *,
 *::before,
@@ -67,7 +67,7 @@ a:hover,
 a:visited:hover,
 a:active:hover {
   -webkit-text-decoration: underline 2px;
-          text-decoration: underline 2px;
+  text-decoration: underline 2px;
 }
 
 .wrapper {
@@ -86,13 +86,12 @@ a:active:hover {
     border: none;
     padding: 0;
 
-
-    @media (width >= 40em){
-        display: none;
-    }  
+    @media (width >= 40em) {
+      display: none;
+    }
   }
-  
 }
+
 .topnav_links {
   display: flex;
   gap: 1rem;
@@ -100,44 +99,27 @@ a:active:hover {
   margin: 0;
   padding: 0;
   justify-content: space-between;
-
 }
 .topnav_item {
   list-style-type: none;
 }
-.topnav_menu {
-
-  @media(width < 40em) and (prefers-reduced-motion){
+.topnav_open[aria-expanded="true"] {
+  + .topnav_menu {
     translate: 0;
-    opacity: 0;
-    trasnsiton: opacity 500 ms ease-in-out;
-
   }
-  
 }
-
 .topnav_close {
-    display: block;
-    margin-inline-start: auto;
-    margin-block-end: 8rem;
-    img {
-      width: 2.5rem;
-    }
+  display: block;
+  margin-inline-start: auto;
+  margin-block-end: 8rem;
+  img {
+    width: 2.5rem;
   }
-
-.topnav_open[aria-expanded='true']{
-+ .topnav_menu{
-    translate:0;
-
-    @media (width < 40em) and (prefers-reduced-motion){
-      opacity: 1;
-    }
-}
 }
 
-.name{
-    display: flex;
-    flex-direction: row;
+.name {
+  display: flex;
+  flex-direction: row;
 }
 
 .main {
@@ -149,7 +131,9 @@ a:active:hover {
   color: var(--main-text-color);
 }
 
-.coursework, .location, .certificate {
+.coursework,
+.location,
+.certificate {
   background-color: var(--secondary-bg-color);
   padding: var(--padding);
   border-radius: var(--border-radius);
@@ -166,7 +150,7 @@ a:active:hover {
   border-radius: var(--border-radius);
   margin: 10px 0;
 }
-.certificate{
+.certificate {
   margin: 2em;
 }
 .certificate .buttons {
@@ -174,12 +158,12 @@ a:active:hover {
   justify-content: space-around;
   margin-bottom: 10px;
 }
-.buttons > button{
+.buttons > button {
   width: 5em;
   padding: var(--padding);
-border-radius: var(--border-radius);
-background-color: var(--main-bg-color);
-color: #fff;
+  border-radius: var(--border-radius);
+  background-color: var(--main-bg-color);
+  color: #fff;
 }
 
 .certificate .courses {
@@ -196,17 +180,17 @@ color: #fff;
   border-radius: 4px;
   cursor: pointer;
 }
-h2{
+h2 {
   color: var(--main-text-color);
   text-align: center;
 }
 figcaption {
-  font-size:2em;
+  font-size: 2em;
   text-align: center;
 }
 footer {
   background-color: var(--main-bg-color);
-  color: fff;
+  color: #fff;
   font-size: 1.5em;
   text-align: center;
   padding: 10px 0;
@@ -214,11 +198,13 @@ footer {
 }
 
 /* Focus states for accessibility */
-button:focus, .course:focus, a:focus {
+button:focus,
+.course:focus,
+a:focus {
   outline: 2px solid yellow;
 }
 
-#credit-count{
+#credit-count {
   font-size: 1em;
   margin-bottom: 10px;
   color: #000;
@@ -227,38 +213,37 @@ button:focus, .course:focus, a:focus {
 /* Responsive Design */
 @media (max-width: 48em) {
   .main {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   header {
-      flex-direction: column; 
-      align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   nav ul {
-      flex-direction: column;
-      margin-top: 10px;
+    flex-direction: column;
+    margin-top: 10px;
   }
 
   nav ul li {
-      margin: 5px 0;
+    margin: 5px 0;
   }
-  .topnav{
+  .topnav {
     flex-direction: row;
     gap: 1rem;
   }
 }
 
-@media (width < 40em){
-  .topnav{
+@media (width < 40em) {
+  .topnav {
     flex-direction: row;
     gap: 1rem;
   }
   .topnav_links {
-      flex-direction: column;
-    
+    flex-direction: column;
   }
-  .topnav_menu{
+  .topnav_menu {
     position: fixed;
     inset: 0;
     padding: 1.5rem;
@@ -267,3 +252,15 @@ button:focus, .course:focus, a:focus {
     transition: translate 0.5s ease-in-out;
   }
 }
+
+@media (width < 40em) and (prefers-reduced-motion) {
+  .topnav_menu {
+    translate: 0;
+    opacity: 0;
+    transition: opacity 500 ms ease-in-out;
+  }
+  .topnav_open[aria-expanded="true"]{
+    opacity: 1;
+  }  
+}
+
