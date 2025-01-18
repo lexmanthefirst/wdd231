@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alex Okhitoya's WDD231 Homepage">
-    <meta name="author" content="Alex Okhitoya">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Alex Okhitoya's WDD231 Homepage" />
+    <meta name="author" content="Alex Okhitoya" />
     <meta
       name="keywords"
-      content="Homepage, WDD231, Alex Okhitoya, nav menu, course, certificate, Nigeria, boxing, fighters, Kano, Web and Computer Programming Certificate, CSE, WDD, CSE 110, WDD 130, CSE 111, CSE 210, WDD 131, WDD 231">
+      content="Homepage, WDD231, Alex Okhitoya, nav menu, course, certificate, Nigeria, boxing, fighters, Kano, Web and Computer Programming Certificate, CSE, WDD, CSE 110, WDD 130, CSE 111, CSE 210, WDD 131, WDD 231"
+    />
     <script src="scripts/homepage.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/homepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>WDD231 | Homepage - Alex Okhitoya</title>
   </head>
   <body>
@@ -31,11 +38,20 @@
             alt="Open Menu"
             width="40"
             height="40"
-          >
+          />
         </button>
         <div class="topnav_menu" role="dialog" aria-label="Navigation Menu">
-          <button id="btnClose" class="topnav_close" aria-label="Close Navigation Menu">
-            <img src="images/close.svg" alt="Close Menu" width="28" height="27">
+          <button
+            id="btnClose"
+            class="topnav_close"
+            aria-label="Close Navigation Menu"
+          >
+            <img
+              src="images/close.svg"
+              alt="Close Menu"
+              width="28"
+              height="27"
+            />
           </button>
           <ul class="topnav_links">
             <li class="topnav_item">
@@ -45,10 +61,16 @@
               <a href="#" class="topnav_link">Chamber</a>
             </li>
             <li class="topnav_item">
-              <a href="https://github.com/lexmanthefirst" class="topnav_link">GitHub Profile</a>
+              <a href="https://github.com/lexmanthefirst" class="topnav_link"
+                >GitHub Profile</a
+              >
             </li>
             <li class="topnav_item">
-              <a href="https://linkedin.com/in/alex-okhitoya" class="topnav_link">LinkedIn</a>
+              <a
+                href="https://linkedin.com/in/alex-okhitoya"
+                class="topnav_link"
+                >LinkedIn</a
+              >
             </li>
           </ul>
         </div>
@@ -71,16 +93,17 @@
               <source
                 srcset="images/naija-boxing-medium.jpg"
                 media="(max-width: 600px)"
-              >
+              />
               <source
                 srcset="images/naija-boxing-small.jpg"
                 media="(min-width: 601px)"
-              >
+              />
               <img
                 src="images/naija-boxing-small.jpg"
                 width="323"
                 height="423"
-                alt="Two Nigerians in a boxing contest">
+                alt="Two Nigerians in a boxing contest"
+              />
             </picture>
             <figcaption>Nigerian Fighters</figcaption>
           </figure>
@@ -88,7 +111,9 @@
       </section>
 
       <section class="certificate" aria-labelledby="certificate-heading">
-        <h2 id="certificate-heading">Web and Computer Programming Certificate</h2>
+        <h2 id="certificate-heading">
+          Web and Computer Programming Certificate
+        </h2>
         <div class="buttons" role="group" aria-label="Course Filter Buttons">
           <button data-filter="all">All</button>
           <button data-filter="CSE">CSE</button>
