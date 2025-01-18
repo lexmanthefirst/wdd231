@@ -75,16 +75,14 @@ a:active:hover {
   align-items: center;
   padding-block: 1.5rem;
 
-  button {
-    background: none;
-    border: none;
-    padding: 0;
-  
+ 
+}
+.topnav   button {
+  background: none;
+  border: none;
+  padding: 0;
 
-    @media (width >= 40em) {
-      display: none;
-    }
-  }
+
 }
 
 .topnav_links {
@@ -260,3 +258,10 @@ a:focus {
   }  
 }
 
+
+@media (width >= 40em) {
+
+  .topnav button{
+    display: none;
+  }
+}
