@@ -96,10 +96,8 @@ a:active:hover {
 .topnav_item {
   list-style-type: none;
 }
-.topnav_open[aria-expanded="true"] {
-  + .topnav_menu {
-    translate: 0;
-  }
+.topnav_open[aria-expanded="true"] ~ .topnav_menu {
+  translate: 0;
 }
 .topnav_close {
   display: block;
