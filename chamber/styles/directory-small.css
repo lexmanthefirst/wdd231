@@ -56,7 +56,7 @@ header span {
 
 .bar1,
 .bar3 {
-  width: 25px;
+  width: 35px;
   height: 2px;
   background-color: #000;
   margin: 8px 0;
@@ -256,7 +256,6 @@ footer {
   max-width: 600px;
   overflow-x: auto;
   overflow-y: hidden;
-  /* white-space: nowrap; */
   border: 1px solid #ddd;
   }
 }
