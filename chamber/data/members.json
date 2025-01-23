@@ -16,7 +16,7 @@
         "Email": "portharcourt@aelex.com",
         "Phone": "09033150806",
         "MemberSince": "01/01/2021",
-        "Membership": "2",
+        "Membership": "Bronze",
         "logo": "https://gravatar.com/avatar/bf79a0ca1696acd7db3ce10c9740f293?s=400&r=G&d=identicon"
     },
     {
@@ -26,7 +26,7 @@
         "Email": "alitashltd@gmail.com",
         "Phone": "08033179213",
         "MemberSince": "28/08/2024",
-        "Membership": "1",
+        "Membership": "Gold",
         "logo": "https://gravatar.com/avatar/f3e1e2f2bf43e52829420c654dab57bc?s=400&r=G&d=identicon"
     },
     {
@@ -36,7 +36,7 @@
         "Email": "amytravels2002@yahoo.com",
         "Phone": "08032319424",
         "MemberSince": "18/06/2003",
-        "Membership": "4",
+        "Membership": "Platinum",
         "logo": "https://gravatar.com/avatar/cb9dd9b42babd4599416685da512874c?s=400&r=G&d=identicon"
     },
     {
@@ -46,7 +46,7 @@
         "Email": "basemac26@gmail.com",
         "Phone": "08033092903",
         "MemberSince": "07/09/2015",
-        "Membership": "2",
+        "Membership": "Gold",
         "logo": "https://gravatar.com/avatar/8ba5e1daa96e58fe04e1ba98c59e52d2?s=400&r=G&d=identicon"
     },
     {
@@ -66,14 +66,13 @@
         "Email": "okolooshiomah@gmail.com",
         "Phone": "08162418302",
         "MemberSince": "04/08/2023",
-        "Membership": "1",
+        "Membership": "Bronze",
         "logo": "https://gravatar.com/avatar/e35f0258ed5d0f53f1c11c623637c42d?s=400&r=G&d=identicon"
     },
     {
         "Name": "CAAST OIL & GAS LIMITED",
         "Industry": "Oil/Gas & Environment, Engineering, Construction & Manufacturing, and Comercial & PPP, Power and Energy",
         "Physical Address": "125 Stadium Road, (Indigo Mall) Port Harcourt, Rivers State, Nigeria.",
-        "Email":"-",
         "Phone": "08033946067",
         "MemberSince": "24/06/2024",
         "Membership": "Bronze",
@@ -83,7 +82,6 @@
         "Name": "CASCADE CONTROLS LIMITED",
         "Industry": "OILFIELD SERVICES",
         "Physical Address": "PLOT 5 FIDDIL AVE., OFF ORDINANCE, TRANS-AMADI INDUSTRIAL LAYOUT, PORT HARCOURT, RIVERS STATE, NIGERIA",
-        "Email":"-",
         "Phone": "08051549353",
         "MemberSince": "09/10/2020",
         "Membership": "Gold",

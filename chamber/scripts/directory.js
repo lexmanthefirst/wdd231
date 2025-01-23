@@ -71,7 +71,7 @@ function displayMembers(members, view) {
                 <td><a href="${member.Email}" target="_blank">${member.Email}</a></td>
                 <td>${member.Phone}</td>
                 <td>${member.MemberSince}</td>
-                <td>${getMembershipLevel(member.Membership)}</td>
+                <td>${member.Membership}</td>
             `;
 
             tbody.appendChild(row);
@@ -94,7 +94,7 @@ function displayMembers(members, view) {
                     <li><strong>Email:</strong> <a href="${member.Email}" target="_blank">${member.Email}</a></li>
                     <li><strong>Phone:</strong> ${member.Phone}</li>
                     <li><strong>Member Since:</strong> ${member.MemberSince}</li>
-                    <li><strong>Membership:</strong> ${getMembershipLevel(member.Membership)}</li>
+                    <li><strong>Membership:</strong> ${member.Membership}</li>
                 </ul>
             `;
 
@@ -103,15 +103,7 @@ function displayMembers(members, view) {
     }
 }
 
-// Determine membership level
-function getMembershipLevel(level) {
-    switch (level) {
-        case 1: return "Member";
-        case 2: return "Silver";
-        case 3: return "Gold";
-        default: return "Unknown";
-    }
-}
+
 
 // Event listeners for buttons
 myBtns.forEach((btn, index) => {
