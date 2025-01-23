@@ -6,14 +6,20 @@
   --nav-hover-bg-color: #7F7F7F;
   --btn-bg-color: #F2F2F2;
   --footer-bg-color: #595959;
+  --font-family: font-family: "Poppins", serif;
 }
+
 *{
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: var(--main-bg-color);
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
 }
+
 header,footer{
   background-color: #bbb;
   padding: 1rem;
@@ -130,12 +136,7 @@ ul.menuLinks.open {
   transform: translateY(0);
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
+
 
 .directory-box {
   display: grid;
