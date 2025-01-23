@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:title" content="Directory | PHCIMMA">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://demetrioaris.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
+  <meta property="og:url" content="https://demetrioaris.github.io/wdd231/chamber/directory.html">
+  <meta property="og:description" content="Chamber of Port Harcourt, Become a member and get membership benefits">
+  <meta property="fb:app_id" content="your-app-id-here">
+
+  <title>Directory | Port Harcourt Chamber of Commerce</title>
+  <meta name="description" content="Chamber directory, Port Harcourt, PHCIMMA, chamber, Directory" />
+  <meta name="author" content="Alex Okhitoya" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+  </noscript>
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/directory-small.css" />
+  <link rel="stylesheet" href="styles/directory-large.css" />
+
+  <script src="/scripts/getdates.js"></script>
+  <script src="scripts/directory.js" defer></script>
+
+  <link rel="icon" href="/images/favicon.ico" sizes="48x48" type="image/ico">
+  <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+   
+    <img src="images/PHCIMMA-logo.jpg" alt="PHCIMMA Official Logo" width="80" height="40" />
+    <span id="site-name">PHCIMMA</span>
+
+  
+    <button class="menu-bars" id="menu-bars" aria-label="Toggle menu" aria-expanded="false">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </button>
+  </header>
+
+  <nav id="animateme" aria-label="Primary navigation">
+    <ul class="menuLinks">
+      <li><a href="#" title="Home" aria-current="page">Home</a></li>
+      <li class="current-menu-item"><a href="#" aria-current="true">Directory</a></li>
+      <li><a href="#" title="Service">Service</a></li>
+      <li><a href="#" title="History">History</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1 class="main-title">Directory</h1>
+    <div class="button-box" role="toolbar" aria-label="View options">
+      <button title="List view" class="mybtn activebtn" id="list-view-btn" aria-pressed="true"><i class="fas fa-list" aria-hidden="true"></i> <span class="sr-only">List view</span></button>
+      <button title="Grid view" class="mybtn" id="grid-view-btn" aria-pressed="false"><i class="fas fa-border-all" aria-hidden="true"></i> <span class="sr-only">Grid view</span></button>
+    </div>
+
+    <section id="directory-box" class="directory-box" aria-live="polite" aria-label="Directory content">
+    </section>
+  </main>
+
+  <footer>
+    <p id="copywrite"></p>
+      <p id="modified"></p>
+  </footer>
+</body>
+
+</html>
