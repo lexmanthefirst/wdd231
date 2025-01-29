@@ -6,7 +6,7 @@
   --nav-hover-bg-color: #7F7F7F;
   --btn-bg-color: #F2F2F2;
   --footer-bg-color: #595959;
-  --font-family: "Poppins", serif;
+  --font-family:"Inter", serif;
 }
 
 *{
@@ -44,6 +44,7 @@ header span {
   font-weight: bold; 
   color: #333;
   justify-self: start; 
+  font-family: var(--font-family);
 }
 
 .menu-bars {
@@ -56,7 +57,7 @@ header span {
 
 .bar1,
 .bar3 {
-  width: 35px;
+  width: 25px;
   height: 2px;
   background-color: #000;
   margin: 8px 0;
@@ -65,7 +66,7 @@ header span {
 }
 
 .bar2 {
-  width: 25px;
+  width: 15px;
   height: 3px;
   background-color: #000;
   margin: 8px 0;
@@ -91,24 +92,30 @@ header span {
   transform: rotate(45deg) translate(-6px, -8px);
 }
 
+a,
+a:visited,
+a:active {
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+}
 
 ul.menuLinks li a{
 display: block;
 padding: .75rem 2vw;
 color: var(--primary-text-color);
+font-family: var(--font-family);
 text-decoration: none;
 }
-ul li:hover{
-  background-color: var(--nav-hover-bg-color);
+
+ul li:hover, ul li:visited:hover, ul li:active:hover{
+  -webkit-text-decoration: underline 2px;
+  text-decoration: underline 2px;
 }
 
-li.current-menu-item a{
-  background-color: var(--nav-hover-bg-color);
-}
 
 /* General styles for all screens */
 nav {
-  background-color: var(--nav-bg-color);
   overflow: hidden;
   max-height: 0;
   transition: max-height 0.5s ease-in-out;
