@@ -38,8 +38,7 @@ async function dispatchEvent(){
       <h3>${event.title}</h3>
       <p><strong>Date:</strong> ${new Date(event.date).toLocaleDateString()}</p>
       <p><strong>Time:</strong> ${event.time}</p>
-      <p><strong>Location:</strong> ${event.location}</p>
-      <p>${event.description}</p>
+    
 
       `;
       eventsCarousel.appendChild(eventCard);
@@ -100,8 +99,13 @@ async function fetchWeather() {
     const data = await response.json();
 
     const weatherInfo = `
+    <div class="weather-card">
+      <h3>Current Weather in Port Harcourt:</h3>
+      <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}.png" alt="${data.weather[0].description} icon">
+    
       <p><strong>Temperature:</strong> ${data.main.temp}°C</p>
       <p><strong>Description:</strong> ${data.weather[0].description}</p>
+    </div>
     `;
 
     document.getElementById("weather-info").innerHTML = weatherInfo;
@@ -132,10 +136,11 @@ async function fetchWeatherForecast() {
     threeDayForecast.forEach(day => {
       const date = new Date(day.dt_txt).toLocaleDateString(undefined, { weekday: 'long' });
       const forecastHTML = `
-        <p>
-          <strong>${date}:</strong> 
-          ${day.main.temp}°C, ${day.weather[0].description}
-        </p>
+        <div class="forecast-day">
+          <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}.png" alt="${day.weather[0].description} icon">
+          <p><strong>${date}:</strong> 
+          ${day.main.temp}°C, ${day.weather[0].description}</P>
+        </div>
       `;
       forecastInfo.innerHTML += forecastHTML;
     });
@@ -181,4 +186,3 @@ document.addEventListener("DOMContentLoaded",()=>{
   fetchWeatherForecast();
   displaySpotlights();
 });
-{/* <p><strong>Address:</strong> ${member["Physical Address"]}</p> */}

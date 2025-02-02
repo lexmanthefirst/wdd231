@@ -1,24 +1,17 @@
 [
-    {
-      "title": "Networking Night",
-      "date": "2025-02-15",
-      "time": "6:00 PM",
-      "location": "Panama City Convention Center",
-      "description": "An opportunity to meet and connect with local business leaders."
-    },
-    {
-      "title": "Annual Gala",
-      "date": "2025-03-20",
-      "time": "7:00 PM",
-      "location": "Grand Ballroom, Panama City",
-      "description": "Join us for an evening of celebration, awards, and entertainment."
-    },
-    {
-      "title": "Sustainability Workshop",
-      "date": "2025-04-10",
-      "time": "10:00 AM",
-      "location": "Chamber Headquarters",
-      "description": "Learn about sustainable practices to implement in your business."
-    }
-  ]
-  
+  {
+    "title": "Networking Night",
+    "date": "2025-02-15",
+    "time": "6:00 PM"
+  },
+  {
+    "title": "Annual Gala",
+    "date": "2025-03-20",
+    "time": "7:00 PM"
+  },
+  {
+    "title": "Sustainability Workshop",
+    "date": "2025-04-10",
+    "time": "10:00 AM"
+  }
+]
