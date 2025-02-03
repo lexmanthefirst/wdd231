@@ -1,0 +1,24 @@
+[
+    {
+        "Membership Type":"Nonprofit",
+        "Membership Level":"Nonprofit",
+        "Benefits":"Free for nonprofit organizations..."
+    },
+    {
+         "Membership Type":"Bronze Membership",
+        "Membership Level":"Bronze",
+        "Benefits":"Includes basic benefits..."
+    },
+    {
+         "Membership Type":"Silver Membership",
+        "Membership Level":"Silver",
+         "Benefits":"Includes basic benefits..."
+    }
+    ,
+    {
+         "Membership Type":"Gold Membership",
+        "Membership Level":"Gold",
+        "Benefits":"Exclusive premium benefits..."
+    }
+
+]

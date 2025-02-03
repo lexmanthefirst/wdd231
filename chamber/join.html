@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+  <meta property="og:title" content="Directory | PHCIMMA">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://github.com/lexmanthefirst/wdd231/blob/main/chamber/images/PHCIMMA-logo.jpg">
+
+  <meta property="og:url" content="https://lexmanthefirst.github.io/wdd231/chamber/directory.html">
+
+  <meta property="og:description" content="Chamber of Port Harcourt, Become a member and get membership benefits">
+  <meta property="fb:app_id" content="your-app-id-here">
+
+  <title>Join Us | Port Harcourt Chamber of Commerce</title>
+  <meta name="description" content="Chamber directory, Port Harcourt, PHCIMMA, chamber, Directory, Home Page" >
+  <meta name="author" content="Alex Okhitoya">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css" >
+  <link rel="stylesheet" href="styles/join.css">
+  <link rel="stylesheet" href="styles/directory-small.css" >
+  <link rel="stylesheet" href="styles/directory-large.css" >
+
+  <script src="scripts/join.js" defer></script>
+
+  <link rel="icon" href="/images/favicon.ico" sizes="48x48" type="image/ico">
+  <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+   
+    <img src="images/PHCIMMA-logo.jpg" alt="PHCIMMA Official Logo" width="80" height="40" >
+    <span id="site-name">Port Harcourt Chamber of Commerce</span>
+
+  
+    <div class="menu-bars" id="menu-bars" aria-label="Toggle menu" aria-expanded="false" role="button">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <!-- <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M23.7222 4H4.27776C3.57207 4 3 4.57207 3 5.27776C3 5.98345 3.57207 6.55553 4.27776 6.55553H23.7222C24.4279 6.55553 25 5.98345 25 5.27776C25 4.57207 24.4279 4 23.7222 4Z" fill="currentColor"></path><path d="M14.7593 12.8887H4.27776C3.57207 12.8887 3 13.4607 3 14.1664C3 14.8721 3.57207 15.4442 4.27776 15.4442H14.7593C15.465 15.4442 16.037 14.8721 16.037 14.1664C16.037 13.4607 15.465 12.8887 14.7593 12.8887Z" fill="currentColor"></path><path d="M23.7222 21.7334H4.27776C3.57207 21.7334 3 22.3055 3 23.0112C3 23.7169 3.57207 24.2889 4.27776 24.2889H23.7222C24.4279 24.2889 25 23.7169 25 23.0112C25 22.3055 24.4279 21.7334 23.7222 21.7334Z" fill="currentColor"></path></svg> -->
+    </div>
+  </header>
+
+  <nav id="animateme" aria-label="Primary navigation">
+    <ul class="menuLinks">
+        <li class="current-menu-item"><a href="./index.html" aria-current="true">Home</a></li>
+      <li><a href="./directory.html" title="Home" aria-current="page">Directory</a></li>
+      <li><a href="./join.html" title="Join">Join</a></li>
+      <li><a href="#" title="Discover">Discover</a></li>
+    </ul>
+  </nav>
+
+  <main>
+<section class="form_modal_container">
+
+    <section class="form_wrapper">
+
+        <fieldset>
+    
+            <legend>Membership Application Form</legend>
+            
+            <form action="thankyou.html" method="get" class="myForm" >
+    
+                <label for="first_name">
+                    First Name:
+                    <input type="text" name="first_name" autocomplete="given-name" required></label>
+                <label for="last_name">
+                    Last name
+                    <input type="text" name="last_name" autocomplete="family-name" required></label>
+                <label for="org_title">
+                    Organizational Title:
+                    <input type="text" name="org_title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+                </label>
+                
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
+                </label>
+                
+                <label for="Mobile">
+                    Mobile Phone:
+                    <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+                </label>
+                <label for="Address">
+                    Address:
+                    <input type="text" name="address" title="Address" autocomplete="address-line1" required>
+                </label>
+    
+                <label for="org_name">
+                    Business/Organization Name:
+                    <input type="text" name="org_name" title="Organization" autocomplete="organization" required>
+                </label>
+                
+                <label for="membership_level">
+                    Membership Level:
+                    <select name="membership_level" required>
+                        <option value="np">NP Membership (Free for Nonprofits)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <h3>Organization Description</h3>
+
+                <label for="org_description">
+                    Business/Organization Description:
+                    <textarea name="org_description" title="Organization Description"></textarea>
+                </label>
+                
+                <input type="hidden" name="timestamp" id="timestamp" value="">
+                
+                <input type="submit" value="Submit Application">
+                
+            </form>
+    
+        </fieldset>
+    
+      </section>
+    
+        <section class="membership_card_wrapper">
+    
+            <div id="membership-cards">
+                <h3>Membership Levels</h3>
+            </div>
+            
+            <dialog id="np-modal"></dialog>
+            
+        </section>
+       
+</section>
+ 
+  </main>
+
+  <footer>
+    <p id="copywrite"></p>
+      <p id="modified"></p>
+  </footer>
+</body>
+
+</html>
