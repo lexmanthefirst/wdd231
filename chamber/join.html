@@ -62,7 +62,7 @@
 
     <section class="form_wrapper">
 
-        <fieldset>
+        <!-- <fieldset>
     
             <legend>Membership Application Form</legend>
             
@@ -70,37 +70,37 @@
     
                 <label for="first_name">
                     First Name:
-                    <input type="text" name="first_name" autocomplete="given-name" required></label>
+                    <input type="text" name="first_name" id="first_name" autocomplete="given-name" required></label>
                 <label for="last_name">
                     Last name
-                    <input type="text" name="last_name" autocomplete="family-name" required></label>
+                    <input type="text" name="last_name" id="last_name" autocomplete="family-name" required></label>
                 <label for="org_title">
                     Organizational Title:
-                    <input type="text" name="org_title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+                    <input type="text" name="org_title" id="org_title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
                 </label>
                 
                 <label for="email">
                     Email:
-                    <input type="email" name="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
+                    <input type="email" name="email" id="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
                 </label>
                 
-                <label for="Mobile">
+                <label for="phone">
                     Mobile Phone:
-                    <input type="tel" name="phone" title="Mobile Phone" autocomplete="tel" required>
+                    <input type="tel" name="phone" id="phone" title="Mobile Phone" autocomplete="tel" required>
                 </label>
-                <label for="Address">
+                <label for="address">
                     Address:
                     <input type="text" name="address" title="Address" autocomplete="address-line1" required>
                 </label>
     
                 <label for="org_name">
                     Business/Organization Name:
-                    <input type="text" name="org_name" title="Organization" autocomplete="organization" required>
+                    <input type="text" name="org_name" id="org_name" title="Organization" autocomplete="organization" required>
                 </label>
                 
                 <label for="membership_level">
                     Membership Level:
-                    <select name="membership_level" required>
+                    <select name="membership_level" required id="membership_level">
                         <option value="np">NP Membership (Free for Nonprofits)</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
@@ -111,17 +111,81 @@
 
                 <label for="org_description">
                     Business/Organization Description:
-                    <textarea name="org_description" title="Organization Description"></textarea>
+                    <textarea name="org_description" title="Organization Description" id="org_description"></textarea>
                 </label>
                 
                 <input type="hidden" name="timestamp" id="timestamp" value="">
                 
-                <input type="submit" value="Submit Application">
+                <input type="submit" value="Submit Application" id="submit">
                 
             </form>
     
-        </fieldset>
-    
+        </fieldset> -->
+        <fieldset> 
+          <legend>Membership Application Form</legend>
+      
+          <h2>Apply for Membership</h2> <!-- Added a section heading -->
+      
+          <form action="thankyou.html" method="get" class="myForm">
+              <label for="first_name">
+                  First Name:
+                  <input type="text" name="first_name" id="first_name" autocomplete="given-name" required>
+              </label>
+              
+              <label for="last_name">
+                  Last Name:
+                  <input type="text" name="last_name" id="last_name" autocomplete="family-name" required>
+              </label>
+              
+              <label for="org_title">
+                  Organizational Title:
+                  <input type="text" name="org_title" id="org_title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
+              </label>
+              
+              <label for="email">
+                  Email:
+                  <input type="email" name="email" id="email" title="Email" autocomplete="email" placeholder="example@domain.com" required>
+              </label>
+              
+              <label for="phone">
+                  Mobile Phone:
+                  <input type="tel" name="phone" id="phone" title="Mobile Phone" autocomplete="tel" required>
+              </label>
+              
+              <label for="address">
+                  Address:
+                  <input type="text" name="address" id="address" title="Address" autocomplete="address-line1" required>
+              </label>
+      
+              <label for="org_name">
+                  Business/Organization Name:
+                  <input type="text" name="org_name" id="org_name" title="Organization" autocomplete="organization" required>
+              </label>
+              
+              <label for="membership_level">
+                  Membership Level:
+              </label>
+              <select name="membership_level" id="membership_level" required>
+                  <option value="" disabled selected>Select a Membership Level</option> <!-- Placeholder option added -->
+                  <option value="np">NP Membership (Free for Nonprofits)</option>
+                  <option value="bronze">Bronze Membership</option>
+                  <option value="silver">Silver Membership</option>
+                  <option value="gold">Gold Membership</option>
+              </select>
+      
+              <h3>Organization Description</h3>
+              
+              <label for="org_description">
+                  Business/Organization Description:
+              </label>
+              <textarea name="org_description" id="org_description" title="Organization Description"></textarea>
+              
+              <input type="hidden" name="timestamp" id="timestamp" value="">
+              
+              <input type="submit" value="Submit Application" id="submit">
+          </form>
+      </fieldset>
+      
       </section>
     
         <section class="membership_card_wrapper">
