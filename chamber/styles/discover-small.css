@@ -44,9 +44,10 @@
   grid-area: location;
 }
 .greeting {
-  font-family: var(--font-family);
-  font-weight: 800;
-  font-size: 2rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 500;
+  font-size: 1rem;
   margin: 1rem 0;
-  text-align: center;
+  text-align: left;
+  font-style: italic;
 }
