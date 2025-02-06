@@ -1,54 +1,51 @@
-
-.place-card{
-    display: grid;
-    grid-template-areas: 
+.place-card {
+  display: grid;
+  grid-template-areas:
     "name"
     "photograph"
     "description"
-    "location"
-    ;
-    margin: 1rem 8px;
-    border: 1px solid #999;
-    background-color: #eee;
-    border-radius: 8px;
-    padding: 1rem;
+    "location";
+  margin: 1rem 8px;
+  border: 1px solid #999;
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 1rem;
 }
 
-.place-card h2{
-    margin: 1rem 10px;
-    grid-area: name;
-    font-family: var(--font-family)
+.place-card h2 {
+  margin: 1rem 10px;
+  grid-area: name;
+  font-family: var(--font-family);
 }
-.place-card img{
-    align-self: center;
-    object-fit: cover;
-    width: auto;
-    height: auto;
-    margin: 1rem 10px;
-    grid-area: photograph;
+.place-card img {
+  align-self: center;
+  object-fit: cover;
+  width: auto;
+  height: auto;
+  margin: 1rem 10px;
+  grid-area: photograph;
 }
-.place-card img:hover{
-    /* opacity: 0.8; */
-    /* box-shadow: 0 0 50px #333; */
-    transform: scale(102%);
-    transition: 0.4s ease-out;
-
+.place-card img:hover {
+  /* opacity: 0.8; */
+  /* box-shadow: 0 0 50px #333; */
+  scale: 105%;
+  transition: 0.4s ease-out;
 }
-.place-card p{
-    margin: 1rem 10px;
-    font-size: 1.2rem;
-    grid-area: description;
+.place-card p {
+  margin: 1rem 10px;
+  font-size: 1.2rem;
+  grid-area: description;
 }
-.place-card address{
-    margin: 1rem 10px;
-    font-size: 1rem;
-    font-style: italic;
-    grid-area: location;
+.place-card address {
+  margin: 1rem 10px;
+  font-size: 1rem;
+  font-style: italic;
+  grid-area: location;
 }
-.greeting{
-    font-family: var(--font-family);
-    font-weight: 800;
-    font-size: 2rem;
-    margin: 1rem 0;
-    text-align: center;
+.greeting {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-align: center;
 }
