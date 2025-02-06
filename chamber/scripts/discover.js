@@ -9,7 +9,7 @@ places.forEach(function (place) {
         <h2>${place.name}</h2>
         <p>${place.description}</p>
         <address>${place.address}</address>
-        <img src="images/${place.photo[0]}" alt="${place.photo[1]}">
+        <img src="images/${place.photo[0]}" alt="${place.photo[1]}" loading="${place.photo[2]}">
         `;
   placeWrapper.appendChild(placeCard);
 });

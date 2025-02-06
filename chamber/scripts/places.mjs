@@ -8,6 +8,7 @@ export const places = [
     photo: [
       "pleasure_park.webp",
       "A picture of the pleasure park kids section",
+      "lazy",
     ],
   },
   {
@@ -19,6 +20,7 @@ export const places = [
     photo: [
       "ph_zoo.webp",
       "A picture of a deer in the port harcourt zoo",
+      "lazy",
     ],
   },
   {
@@ -27,7 +29,11 @@ export const places = [
       "Kolabi Creek, east of the Old Township district, Port Harcourt, Rivers State, Nigeria",
     description:
       "A white sand urban beach created in 1988, offering a serene environment for swimming, picnics, and relaxation. Visitors can enjoy local delicacies at nearby bush bars. It costs around ₦500 per person",
-    photo: ["ph_tourist_beach.webp", "A picture of the port harcourt tourist beach"],
+    photo: [
+      "ph_tourist_beach.webp",
+      "A picture of the port harcourt tourist beach",
+      "lazy",
+    ],
   },
   {
     name: "Delaroke Art Gallery",
@@ -35,21 +41,29 @@ export const places = [
       "No. 1 Liberation Stadium Road, Elekahia, Port Harcourt, Rivers State, Nigeria",
     description:
       "Showcases contemporary artworks, providing insight into the region's vibrant art scene. A must-visit for art enthusiasts. It is Free entry; artworks available for purchase",
-    photo: ["delarokear.webp", "Art on display at the Delaroke art gallery"],
+    photo: [
+      "delarokear.webp",
+      "Art on display at the Delaroke art gallery",
+      "lazy",
+    ],
   },
   {
     name: "Mile One Market",
     address: "Mile One, Diobu, Port Harcourt, Rivers State, Nigeria",
     description:
       "One of Nigeria's largest open markets, offering a wide array of goods, from textiles to electronics. A bustling hub where visitors can practice their bargaining skillsree entry; prices vary by item",
-    photo: ["mileonemkt.webp", "Kids smiling at the Mile one market"],
+    photo: ["mileonemkt.webp", "Kids smiling at the Mile one market", "lazy"],
   },
   {
     name: "Port Harcourt Golf Club",
     address: "31A Forces Avenue, Old GRA, Port Harcourt, Rivers State, Nigeria",
     description:
       "Established in 1928, this 18-hole golf course offers a tranquil setting for both novice and experienced golfers. The club also features a swimming pool, table tennis hall, and restaurant. Green fees vary; contact the club for current rates",
-    photo: ["golf-course.webp", "Cross-section of the port harcour golf club"],
+    photo: [
+      "golf-course.webp",
+      "Cross-section of the port harcour golf club",
+      "lazy",
+    ],
   },
   {
     name: "Isaac Boro Park",
@@ -59,6 +73,7 @@ export const places = [
     photo: [
       "isaacpark.webp",
       "A picture of a monument in honor of Major Isaac Boro",
+      "lazy",
     ],
   },
   {
@@ -67,14 +82,18 @@ export const places = [
       "Typically held at the Port Harcourt Pleasure Park or other designated venues in Port Harcourt",
     description:
       "An annual food festival celebrating the local delicacy 'bole' (roasted plantain) and offering a variety of traditional southern Nigerian dishes, along with music and cultural performances. Entry fees vary; check official announcements for current pricing",
-    photo: ["bole.webp", "A woman roasting Bole at the Bole festival"],
+    photo: ["bole.webp", "A woman roasting Bole at the Bole festival", "lazy"],
   },
   {
     name: "Carniriv (Carnival River State)",
     address: "Various locations in Port Harcourt, Rivers State, Nigeria",
     description:
       "An annual cultural and tourism event that showcases the rich heritage of the people of Rivers State through parades, music, dance, and fashion displays. Free entry; VIP passes available for purchase",
-    photo: ["carinriver.webp", "A team rowing a boat at a carniriv carnival"],
+    photo: [
+      "carinriver.webp",
+      "A team rowing a boat at a carniriv carnival",
+      "lazy",
+    ],
   },
   {
     name: "Rivers State Museum",
@@ -84,6 +103,7 @@ export const places = [
     photo: [
       "rivers_museum.webp",
       "A picture of the pleasure park kids section",
+      "lazy",
     ],
   },
 ];
