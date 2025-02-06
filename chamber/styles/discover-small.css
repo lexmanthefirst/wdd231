@@ -20,6 +20,7 @@
     font-family: var(--font-family)
 }
 .place-card img{
+    align-self: center;
     object-fit: cover;
     width: auto;
     height: auto;
