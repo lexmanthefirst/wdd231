@@ -1,52 +1,32 @@
+import {app} from './app.mjs';
 // Selectors
-const myBtns = document.querySelectorAll('.button-box button');
-const menuBars = document.getElementById("menu-bars");
-const navElement = document.querySelector('nav');
 const directoryBox = document.getElementById("directory-box");
-
-
-const getCopyrite = ()=>{
-    const copyrightElement = document.getElementById("copywrite");
-    const modifiedElement = document.getElementById("modified");
-  
-    copyrightElement.textContent = `© ${new Date().getFullYear()} All Rights Reserved | Okhitoya Alex`;
-    modifiedElement.textContent = `Last Modified: ${document.lastModified}`;
-}
-const toggleNav =  ()=>{
-  menuBars.classList.toggle("change");
-  navElement.classList.toggle('open');
-  const menuLinks = document.querySelector('.menuLinks');
-  menuLinks.classList.toggle('open');
-}
-
-// Event Listener
-menuBars.addEventListener("click", toggleNav);
-
+const myBtns = document.querySelectorAll(".button-box button");
 
 
 // Fetch and display member data
 async function fetchMembers(view = "list") {
-    try {
-        const response = await fetch("data/members.json");
-        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+  try {
+    const response = await fetch("data/members.json");
+    if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
-        const members = await response.json();
-        displayMembers(members, view);
-    } catch (error) {
-        console.error("Error fetching member data:", error);
-    }
+    const members = await response.json();
+    displayMembers(members, view);
+  } catch (error) {
+    console.error("Error fetching member data:", error);
+  }
 }
 
 // Display members in the desired view
 function displayMembers(members, view) {
-    directoryBox.innerHTML = ""; // Clear existing content
+  directoryBox.innerHTML = ""; // Clear existing content
 
-    if (view === "list") {
-        const table = document.createElement("table");
-        const thead = document.createElement("thead");
-        const tbody = document.createElement("tbody");
+  if (view === "list") {
+    const table = document.createElement("table");
+    const thead = document.createElement("thead");
+    const tbody = document.createElement("tbody");
 
-        thead.innerHTML = `
+    thead.innerHTML = `
             <tr>
                 <th>Logo</th>
                 <th>Name</th>
@@ -59,10 +39,10 @@ function displayMembers(members, view) {
             </tr>
         `;
 
-        members.forEach(member => {
-            const row = document.createElement("tr");
+    members.forEach((member) => {
+      const row = document.createElement("tr");
 
-            row.innerHTML = `
+      row.innerHTML = `
                 <td><img src="${member.logo}" alt="${member.Name} logo" class="logo"></td>
                 <td>${member.Name}</td>
                 <td>${member.Industry}</td>
@@ -73,18 +53,18 @@ function displayMembers(members, view) {
                 <td>${member.Membership}</td>
             `;
 
-            tbody.appendChild(row);
-        });
+      tbody.appendChild(row);
+    });
 
-        table.appendChild(thead);
-        table.appendChild(tbody);
-        directoryBox.appendChild(table);
-    } else {
-        members.forEach(member => {
-            const card = document.createElement("div");
-            card.classList.add("card-box");
+    table.appendChild(thead);
+    table.appendChild(tbody);
+    directoryBox.appendChild(table);
+  } else {
+    members.forEach((member) => {
+      const card = document.createElement("div");
+      card.classList.add("card-box");
 
-            card.innerHTML = `
+      card.innerHTML = `
                 <img src="${member.logo}" alt="${member.Name} logo" class="logo">
                 <h3>${member.Name}</h3>
                 <ul>
@@ -97,37 +77,34 @@ function displayMembers(members, view) {
                 </ul>
             `;
 
-            directoryBox.appendChild(card);
-        });
-    }
+      directoryBox.appendChild(card);
+    });
+  }
 }
-
-
 
 // Event listeners for buttons
 myBtns.forEach((btn, index) => {
-    btn.addEventListener("click", () => {
-        buttonView(index);
-    });
+  btn.addEventListener("click", () => {
+    buttonView(index);
+  });
 });
 
 // Switch between list and grid views
 function buttonView(index) {
-    const view = index === 0 ? "list" : "grid";
-    myBtns.forEach(btn => btn.classList.remove("activebtn"));
-    myBtns[index].classList.add("activebtn");
-    toggleView(view);
-    fetchMembers(view);
+  const view = index === 0 ? "list" : "grid";
+  myBtns.forEach((btn) => btn.classList.remove("activebtn"));
+  myBtns[index].classList.add("activebtn");
+  toggleView(view);
+  fetchMembers(view);
 }
 
 function toggleView(view) {
-    directoryBox.classList.toggle("grid-view", view === "grid");
-    directoryBox.classList.toggle("list-view", view === "list");
+  directoryBox.classList.toggle("grid-view", view === "grid");
+  directoryBox.classList.toggle("list-view", view === "list");
 }
 
 // Initialize with list view
 document.addEventListener("DOMContentLoaded", () => {
-    fetchMembers("list");
-    getCopyrite();
+  fetchMembers("list");
+ app();
 });
-

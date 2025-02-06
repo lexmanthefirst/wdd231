@@ -1,0 +1,46 @@
+
+.place-card{
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location"
+    ;
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.place-card h2{
+    margin: 1rem 10px;
+    grid-area: name;
+    font-family: var(--font-family)
+}
+.place-card img{
+    object-fit: cover;
+    width: auto;
+    height: auto;
+    margin: 1rem 10px;
+    grid-area: photograph;
+}
+.place-card p{
+    margin: 1rem 10px;
+    font-size: 1.2rem;
+    grid-area: description;
+}
+.place-card address{
+    margin: 1rem 10px;
+    font-size: 1rem;
+    font-style: italic;
+    grid-area: location;
+}
+.greeting{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 2rem;
+    margin: 1rem 0;
+    text-align: center;
+}

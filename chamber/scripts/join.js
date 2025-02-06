@@ -1,33 +1,13 @@
+import {app} from './app.mjs';
 // Selectors
-const myBtns = document.querySelectorAll('.button-box button');
-const menuBars = document.getElementById("menu-bars");
-const navElement = document.querySelector('nav');
 const membershipContainer = document.getElementById("membership-cards");
 const membershipModal = document.getElementById('np-modal'); // Corrected
 let closeModal; // Will be assigned dynamically
 const body = document.querySelector('body');
 
 
-const getCopyrite = () => {
-    const copyrightElement = document.getElementById("copywrite");
-    const modifiedElement = document.getElementById("modified");
-
-    copyrightElement.textContent = `© ${new Date().getFullYear()} All Rights Reserved | Okhitoya Alex`;
-    modifiedElement.textContent = `Last Modified: ${document.lastModified}`;
-};
-
-const toggleNav = () => {
-    menuBars.classList.toggle("change");
-    navElement.classList.toggle('open');
-    const menuLinks = document.querySelector('.menuLinks');
-    menuLinks.classList.toggle('open');
-};
-
-// Event Listener
-menuBars.addEventListener("click", toggleNav);
-
 document.addEventListener("DOMContentLoaded", () => {
-    getCopyrite();
+    app();
     fetchMemberships();
 });
 

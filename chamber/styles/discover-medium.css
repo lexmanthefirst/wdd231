@@ -1,0 +1,11 @@
+@media only screen and (min-width: 38rem) {
+  .place-card {
+    grid-template-areas:
+      "photograph name"
+      "photograph description"
+      "photograph location";
+  }
+  .place-card img{
+    width: 300px;
+  }
+}
