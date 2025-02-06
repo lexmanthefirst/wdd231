@@ -17,20 +17,21 @@
   grid-area: name;
   font-family: var(--font-family);
 }
-.place-card img {
-  align-self: center;
-  object-fit: cover;
-  width: auto;
-  height: auto;
-  margin: 1rem 10px;
+
+.image-container {
+  overflow: hidden;
+  display: inline-block;
   grid-area: photograph;
 }
-.place-card img:hover {
-  /* opacity: 0.8; */
-  /* box-shadow: 0 0 50px #333; */
-  scale: 105%;
-  transition: 0.4s ease-out;
+
+.image-container img {
+  transition: transform 0.3s ease-in-out;
 }
+
+.image-container:hover img {
+  transform: scale(1.2);
+}
+
 .place-card p {
   margin: 1rem 10px;
   font-size: 1.2rem;
