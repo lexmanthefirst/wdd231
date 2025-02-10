@@ -1,8 +1,7 @@
-import {app} from './app.mjs';
+import { app } from "./app.mjs";
 // Selectors
 const directoryBox = document.getElementById("directory-box");
 const myBtns = document.querySelectorAll(".button-box button");
-
 
 // Fetch and display member data
 async function fetchMembers(view = "list") {
@@ -106,5 +105,5 @@ function toggleView(view) {
 // Initialize with list view
 document.addEventListener("DOMContentLoaded", () => {
   fetchMembers("list");
- app();
+  app();
 });
