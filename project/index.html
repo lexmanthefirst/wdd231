@@ -55,7 +55,7 @@
   </nav>
   <section class="call-to-action-wrapper">
     <div class="call-to-action">
-      <h1>Learn new concepts for each question</h1>
+      <h1>Learn new concepts <br> for each question</h1>
       <p>We help you prepare for exams and quizes</p>
      <div class="cta-btns">
       <button class="cta-btn"><a href="quiz.html" class="btn">Start Solving</a></button>
@@ -63,20 +63,25 @@
      </div>
     </div>
 
-   <picture class="hero-box-img">
-      <source media="(max-width: 600px)" srcset="images/quizgrad-hero.svg">
-      <source media="(max-width: 800px)" srcset="images/quizgrad-hero.svg">
-      <source media="(max-width: 1200px)" srcset="images/quizgrad-hero.svg">
-      <source media="(min-width: 1201px)" srcset="images/quizgrad-hero.svg">
-      <img class="hero-home-img" src="images/quizgrad-hero.svg" alt="Quiz grad Hero Image">
-    </picture>
+ <div class="hero-image-container">
+  <picture>
+    <source media="(max-width: 600px)" srcset="images/quizgrad-hero.svg">
+    <source media="(max-width: 800px)" srcset="images/quizgrad-hero.svg">
+    <source media="(max-width: 1200px)" srcset="images/quizgrad-hero.svg">
+    <source media="(min-width: 1201px)" srcset="images/quizgrad-hero.svg">
+    <img class="hero-home-img" src="images/quizgrad-hero.svg" alt="Quiz grad Hero Image">
+  </picture>
+ </div>
 
   </section>
+  <div class="theme-toggle">
+    <button id="theme-btn" aria-label="Toggle theme">🌙</button>
+  </div>
 
-  <footer>
+  <!-- <footer>
     <p id="copywrite"></p>
     <p id="modified"></p>
-  </footer>
+  </footer> -->
 </body>
 </html>
 

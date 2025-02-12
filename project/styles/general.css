@@ -1,28 +1,36 @@
-:root{
-    --heading-font-color: #333333;
-    --secondary-font-color: #828282;
-    --main-bg-color: #fff;
-    --nav-bg-color: #fff;
-    --nav-font-color: #e0e0e0;
-    --btn-bg-color: linear-gradient(90deg, #fcc822 0%, #ffcd2e 100%);
-    --btn-font-color: #fff;
-    --btn-hover-bg-color: #fff;
-    --btn-hover-font-color: #fcc822;
-    --footer-bg-color: #595959;
-    --paragraph-font:"Poppins", serif;
-    --secondary-font:"Roboto", serif;
-  }
-  
+
+  /* general.css */
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+  --primary-light: #818cf8;
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --bg-light: #f8fafc;
+  --bg-dark: #0f172a;
+  --card-bg: #ffffff;
+  --card-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  --paragraph-font:"Poppins", serif;
+  --secondary-font:"Inter", sans-serif;
+}
+
+[data-theme="dark"] {
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --bg-light: #0f172a;
+  --card-bg: #1e293b;
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
   *{
     padding: 0;
     box-sizing: border-box;
   }
   body {
-    font-family: var(--font-family);
-    background: #f9f9f9;
-    margin: 0;
-    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: var(--bg-light);
+    color: var(--text-primary);
+    transition: background 0.3s ease, color 0.3s ease;
   }
+  
   
   header,footer{
     background-color: #bbb;
@@ -33,9 +41,10 @@
     grid-template-columns: auto 1fr auto; 
     align-items: center; 
     padding: 1rem; 
-    background-color: #f9f9f9; 
+    background-color: var(--bg-light); 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     gap: 10px; 
+    transition: background 0.3s ease, color 0.3s ease;
   }
   
   header img {
@@ -157,6 +166,18 @@
     background: none;
   }
 
+  
+  /* New animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
   @media only screen and (min-width: 38rem) {
     .menu-bars {
       display: none;
