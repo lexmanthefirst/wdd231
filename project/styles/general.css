@@ -123,10 +123,10 @@
   text-decoration: none;
   }
   
-  ul li:hover, ul li:visited:hover, ul li:active:hover{
-   background: #fff;
+  /* ul li:hover, ul li:visited:hover, ul li:active:hover{
+
   }
-  
+   */
   
   /* General styles for all screens */
   nav {
