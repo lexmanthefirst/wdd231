@@ -3,23 +3,27 @@ document.addEventListener("DOMContentLoaded", function () {
   app();
 });
 
-// theme-toggle.js
 const themeBtn = document.getElementById("theme-btn");
-document.documentElement.classList.toggle(
-  "dark-theme",
-  localStorage.getItem("theme") === "dark"
-);
+const root = document.documentElement;
 
+// Function to set the theme
+function setTheme(theme) {
+  root.dataset.theme = theme;
+  localStorage.setItem("theme", theme);
+  themeBtn.textContent = theme === "dark" ? "🌙" : "☀️";
+}
 
+// Toggle theme on button click
+function toggleTheme() {
+  const newTheme = root.dataset.theme === "dark" ? "light" : "dark";
+  setTheme(newTheme);
+}
 
-const toggleTheme = () => {
-  const isDark = document.documentElement.getAttribute("data-theme") === "dark";
-  document.documentElement.setAttribute(
-    "data-theme",
-    isDark ? "light" : "dark"
-  );
-  localStorage.setItem("theme", isDark ? "light" : "dark");
-  themeBtn.textContent = isDark ? "🌙" : "☀️";
-};
+// Set theme on page load
+document.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme") || "light";
+  setTheme(savedTheme);
+});
 
+// Add event listener to button
 themeBtn.addEventListener("click", toggleTheme);
