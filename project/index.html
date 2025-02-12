@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      
+        <meta property="og:title" content="Site Plan | MyQuiz App">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="#">
+      
+        <meta property="og:url" content="#">
+      
+        <meta property="og:description" content="MyQuiz Project Site Plan">
+        <meta property="fb:app_id" content="your-app-id-here">
+      
+        <title>MyQuiz</title>
+        <meta name="description" content="MyQuiz, Site Plan, Project, Quiz" >
+        <meta name="author" content="Alex Okhitoya">
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+        </noscript>
+      
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/general.css" >
+        <link rel="stylesheet" href="styles/home.css" >
+
+        
+        <script src="scripts/home.js" type="module"></script>
+    
+
+    </head>
+<body>
+  <header>
+   
+    <img src="images/quizgrad.svg" alt="QuizGrad Logo" width="80" height="40" >
+
+  
+    <div class="menu-bars" id="menu-bars" aria-label="Toggle menu" aria-expanded="false" role="button">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+  </header>
+  <nav id="animateme" aria-label="Primary navigation">
+    <ul class="menuLinks">
+        <li><a href="./index.html">How it works?</a></li>
+      <li><a href="#" title="Features">Features</a></li>
+      <li class="current-menu-item"><a href="#" title="About us" aria-current="true">About Us</a></li>
+      <li class="login-btn"><a href="#" title="Login" aria-current="true">Login</a></li>
+    </ul>
+  </nav>
+  <section class="call-to-action-wrapper">
+    <div class="call-to-action">
+      <h1>Learn new concepts for each question</h1>
+      <p>We help you prepare for exams and quizes</p>
+     <div class="cta-btns">
+      <button class="cta-btn"><a href="quiz.html" class="btn">Start Solving</a></button>
+      <button class="learn-more-btn"><a href="quiz.html" class="btn">Learn More</a></button>
+     </div>
+    </div>
+
+   <picture class="hero-box-img">
+      <source media="(max-width: 600px)" srcset="images/quizgrad-hero.svg">
+      <source media="(max-width: 800px)" srcset="images/quizgrad-hero.svg">
+      <source media="(max-width: 1200px)" srcset="images/quizgrad-hero.svg">
+      <source media="(min-width: 1201px)" srcset="images/quizgrad-hero.svg">
+      <img class="hero-home-img" src="images/quizgrad-hero.svg" alt="Quiz grad Hero Image">
+    </picture>
+
+  </section>
+
+  <footer>
+    <p id="copywrite"></p>
+    <p id="modified"></p>
+  </footer>
+</body>
+</html>
+

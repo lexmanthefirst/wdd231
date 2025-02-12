@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      
+        <meta property="og:title" content="Site Plan | MyQuiz App">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="#">
+      
+        <meta property="og:url" content="#">
+      
+        <meta property="og:description" content="MyQuiz Project Site Plan">
+        <meta property="fb:app_id" content="your-app-id-here">
+      
+        <title>MyQuiz</title>
+        <meta name="description" content="MyQuiz, Site Plan, Project, Quiz" >
+        <meta name="author" content="Alex Okhitoya">
+      
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+        </noscript>
+      
+        <link rel="stylesheet" href="styles/quiz.css" >
+        
+        <script src="scripts/quiz.js" defer></script>
+    
+
+    </head>
+<body>
+    
+<main>
+    <h2>Select a Topic</h2>
+    <label for="category-select">Choose a Quiz Topic:</label>
+    <select id="category-select">
+        <option value="">--Select a Topic--</option>
+        <option value="9">General Knowledge</option>
+        <option value="17">Science & Nature</option>
+        <option value="18">Computers</option>
+        <option value="22">Geography</option>
+        <option value="23">History</option>
+        <option value="27">Animals</option>
+    </select>
+    <button id="start-quiz">Start Quiz</button>
+
+    <section id="quiz-container" class="hidden">
+        <h2 id="question"></h2>
+        <ul class="quiz-options"></ul>
+        <button id="check-answer">Check Answer</button>
+        <p id="result"></p>
+        <p>Score: <span id="correct-score">0</span> / <span id="total-question">10</span></p>
+        <button id="play-again" class="hidden">Play Again</button>
+    </section>
+</main>
+</body>
+</html>
+
