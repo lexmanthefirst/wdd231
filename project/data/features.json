@@ -1,0 +1,37 @@
+[
+    {
+        "icon": "📝",
+        "title": "Create Custom Quizzes",
+        "description": "Build quizzes with multiple question types, custom themes, and timer settings."
+    },
+    {
+        "icon": "🎯",
+        "title": "Take Quizzes",
+        "description": "Choose from thousands of quizzes, get instant feedback, and compete with friends."
+    },
+    {
+        "icon": "📊",
+        "title": "Track Your Progress",
+        "description": "View your quiz history, performance analytics, and earn badges."
+    },
+    {
+        "icon": "🤝",
+        "title": "Collaborate & Share",
+        "description": "Create team quizzes, share links, and embed quizzes on your website."
+    },
+    {
+        "icon": "🏫",
+        "title": "For Educators & Businesses",
+        "description": "Use quizzes for classrooms, certifications, and corporate training."
+    },
+    {
+        "icon": "🌍",
+        "title": "Cross-Platform Accessibility",
+        "description": "Access Quizzy on any device, offline mode, and multi-language support."
+    },
+    {
+        "icon": "🔒",
+        "title": "Secure & Reliable",
+        "description": "Your data is safe with GDPR compliance, cloud backups, and 24/7 support."
+    }
+]

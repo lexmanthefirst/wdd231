@@ -164,7 +164,32 @@
     margin-top: auto;
     background: none;
   }
-
+  .login-btn {
+    border: 1px solid #fcc822;
+    background: none;
+    color: #fcc822;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+  }
+  
+  /* Theme toggle */
+  .theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  
+  #theme-btn {
+    background: var(--card-bg);
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: var(--card-shadow);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
   
   /* New animations */
   @keyframes float {
