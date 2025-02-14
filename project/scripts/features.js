@@ -40,10 +40,38 @@ function displayFeatures(features) {
     featureCard.innerHTML = `
      <div class="icon">${feature.icon}</div>
       <h2>${feature.title}</h2>
-      <p>${feature.description}</p>
+      <p>More Info</p>
     `;
     featureContainer.appendChild(featureCard);
+    featureCard.addEventListener("click", () => displayFeaturesModal(feature));
   });
+}
+const featureModal = document.getElementById("features-modal");
+let closeModal;
+const body = document.querySelector("body");
+function displayFeaturesModal(features){
+featureModal.innerHTML = `
+<h3>${features.title}</h3>
+<p>${features.description}</p>
+<button id="closeModal">x</button>`
+
+featureModal.showModal();
+
+closeModal = document.getElementById('closeModal');
+closeModal.addEventListener("click", () => featureModal.close());
+
+body.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+      featureModal.close();
+  }
+});
+
+featureModal.addEventListener("click", (event) => {
+  if (event.target === featureModal) {
+      featureModal.close();
+  }
+});
+
 }
 
 document.addEventListener("DOMContentLoaded", () => {

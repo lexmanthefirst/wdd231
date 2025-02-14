@@ -48,7 +48,7 @@
         <div class="login-container">
           <div class="logo"><img src="./images/quizgrad-logo.svg" alt=""></div>
           <div class="welcome-text">
-            <h1>Welcome back!</h1>
+            <h1></h1>
             <p>Sign in to your account to continue</p>
           </div>
           <form action="#" method="POST" id="loginForm">
@@ -67,7 +67,8 @@
               </label>
               <a href="#" class="forgot-password">Forgot Password?</a>
             </div>
-            <button type="submit" class="login-btn">Sign in</button>
+            <input type="hidden" name="timestamp" id="timestamp" value="">
+            <button type="submit" id="submit" class="login-btn">Sign in</button>
             <div class="signup">
               <p>Don't have an account? <a href="#">Sign up</a></p>
             </div>

@@ -40,46 +40,39 @@
     color: var(--text-color);
   }
   
-  /* Footer
-  footer {
-    background: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 2rem;
-  }
-  
-  footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 2px solid white;
-  }
-  
-  footer a:hover {
-    opacity: 0.8;
-  }
-  
-  /* Theme Toggle */
-  /* .theme-toggle {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1000;
-  }
-  
-  #theme-btn {
-    background: var(--primary-color);
-    color: white;
+  dialog {
+    width: 90%;
+    max-width: 600px;
     border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  #theme-btn:hover {
-    transform: scale(1.1);
-  }  */
+    border-radius: 1.5rem;
+    padding: 2rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    box-shadow: 0 16px 64px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+}
+#closeModal{
+position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #fcc822;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out; 
+}
+#closeModal:hover{
+  transform: rotate(360deg);
+}
