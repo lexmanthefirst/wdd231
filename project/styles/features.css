@@ -49,7 +49,6 @@
     background: var(--glass-bg);
     backdrop-filter: blur(16px);
     box-shadow: 0 16px 64px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 dialog::backdrop {
