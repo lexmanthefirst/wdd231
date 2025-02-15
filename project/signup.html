@@ -13,7 +13,7 @@
     <meta property="og:description" content="MyQuiz Project Site Plan">
     <meta property="fb:app_id" content="your-app-id-here">
 
-    <title>Login | MyQuiz</title>
+    <title>Sign Up | MyQuiz</title>
     <meta
       name="description"
       content="MyQuiz, Site Plan, Project, Quiz sign in, sign up, login"
@@ -34,46 +34,55 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap"
       />
     </noscript>
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/general.css" >
-    <link rel="stylesheet" href="styles/login.css" >
+    <link rel="stylesheet" href="styles/signup.css" >
 
-    <script src="scripts/login.js" defer></script>
+    <script src="scripts/signup.js" defer></script>
     <link rel="icon" href="images/myquiz.ico" sizes="32x48" type="image/ico">
   </head>
   <body>
     <main>
-      <section class="login-wrapper">
-        <div class="login-container">
+      <section class="signup-wrapper">
+        <div class="signup-container">
           <div class="logo"><img src="./images/quizgrad-logo.svg" alt=""></div>
           <div class="welcome-text">
-            <h1></h1>
-            <p>Sign in to your account to continue</p>
+
+            <h1>Create an account to continue</h1>
           </div>
-          <form action="#" method="POST" id="loginForm">
+          <form action="thankyou.html" method="GET" id="signupForm">
+            <div class="input-group">
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" autocomplete="" required>
+            </div>
+            <div class="input-group">
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" autocomplete="" >
+            </div>
+            <div class="input-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username"  autoncomplete  pattern="[A-Za-z\-\s]{7,}" required >
+            </div>
             <div class="input-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" id="email" name="email" placeholder="example@domain.com" autocomplete required>
             </div>
+
             <div class="input-group">
               <label for="password">Password</label>
               <input type="password" id="password" name="password" required >
             </div>
-            <div class="options">
-              <label class="checkbox-label">
-                <input type="checkbox">
-                Remember Me
-              </label>
-              <a href="#" class="forgot-password">Forgot Password?</a>
+        
+            <div class="input-group">
+              <label for="password">Confirm Password</label>
+              <input type="password" id="confirm_password" name="confirm_password" required >
             </div>
+        
             <input type="hidden" name="timestamp" id="timestamp" value="">
-            <button type="submit" id="submit" class="login-btn">Sign in</button>
-            <div class="signup">
-              <p>Don't have an account? <a href="#">Sign up</a></p>
-            </div>
+            <button type="submit" id="submit" class="signup-btn">Create my account</button>
+            
 
-            <div class="social-login">
+            <div class="social-signup">
               <button class="social-btn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#1877F2">
                       <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/>
@@ -89,7 +98,7 @@
           </div>
           </form>
         </div>
-        <div class="login-image-wrapper">
+        <div class="signup-image-wrapper">
           <img src="images/login_image.svg" alt="Login Image" />
         </div>
       </section>

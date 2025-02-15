@@ -1,0 +1,127 @@
+
+.signup-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 10rem;
+    flex-wrap: wrap;
+
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 440px;
+}
+.signup-image-wrapper{
+    position: relative;
+}
+.signup-image-wrapper img{
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 24px 48px rgba(99, 102, 241, 0.15));
+    animation: float 6s ease-in-out infinite;
+}
+
+.welcome-text {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.welcome-text h1 {
+    font-size: 2rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-family: var(--secondary-font);
+}
+label{
+    color: var(--text-primary);
+    font-size: 1rem;
+   -webkit-flow-into: var(--secondary-font);
+}
+
+.input-group {
+    margin-bottom: .5rem;
+}
+
+input {
+    color: var(--text-primary);
+    width: 100%;
+    padding: 0.875rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-light);
+    box-shadow: var(--card-shadow);
+}
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+
+
+.signup-btn {
+    border: 1px solid #fcc822;
+    background: none;
+    color: #fcc822;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+.signup-btn:hover {
+    transform: translateY(-2px);
+}
+.social-signup {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-btn {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.social-btn:hover {
+    background: #f8fafc;
+}
+@media only screen and (max-width: 38rem){
+    .signup-image-wrapper{
+        display: none;
+        overflow: hidden;
+    }
+    .signup-image-wrapper img{
+        display: none;
+        overflow: hidden;
+    }
+    .signup-container{
+        width: 100%;
+    }
+    .theme-toggle {
+        top: 2rem;
+    }
+}
