@@ -77,7 +77,6 @@ featureModal.addEventListener("click", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
   fetchFeatures();
   toggleMenu();
-  darkMode();
 });
 
 const darkMode = () => {
@@ -106,3 +105,4 @@ const darkMode = () => {
   // Add event listener to button
   themeBtn.addEventListener("click", toggleTheme);
 };
+darkMode();

@@ -26,7 +26,6 @@ const darkMode = () => {
   };
 
   document.addEventListener("DOMContentLoaded", () => {
-    darkMode();
     displayGreeting();
   });
   
@@ -53,3 +52,4 @@ const darkMode = () => {
     }
     localStorage.setItem("lastVisit", now.toString());
   }
+  darkMode();

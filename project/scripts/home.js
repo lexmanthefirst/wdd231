@@ -1,6 +1,5 @@
 import { toggleMenu } from "./app.mjs";
 document.addEventListener("DOMContentLoaded", function () {
-  darkMode();
   toggleMenu();
 });
 
@@ -30,3 +29,4 @@ const darkMode = () => {
   // Add event listener to button
   themeBtn.addEventListener("click", toggleTheme);
 };
+darkMode();
