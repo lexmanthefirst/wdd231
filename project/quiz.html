@@ -25,35 +25,23 @@
         </noscript>
       
         <link rel="stylesheet" href="styles/quiz.css" >
+        <link rel="stylesheet" href="styles/general.css" >
+        <link rel="stylesheet" href="styles/normalize.css" >
         
-        <script src="scripts/quiz.js" defer></script>
+        <script src="scripts/quiz.js" type="module"></script>
     
 
     </head>
 <body>
     
 <main>
-    <h2>Select a Topic</h2>
-    <label for="category-select">Choose a Quiz Topic:</label>
-    <select id="category-select">
-        <option value="">--Select a Topic--</option>
-        <option value="9">General Knowledge</option>
-        <option value="17">Science & Nature</option>
-        <option value="18">Computers</option>
-        <option value="22">Geography</option>
-        <option value="23">History</option>
-        <option value="27">Animals</option>
-    </select>
-    <button id="start-quiz">Start Quiz</button>
+  <div>
+    <h1 class="float-message">Coming Soon!</h1>
+  </div>
+  <div class="theme-toggle">
+    <button id="theme-btn" aria-label="Toggle theme">🌙</button>
+  </div>
 
-    <section id="quiz-container" class="hidden">
-        <h2 id="question"></h2>
-        <ul class="quiz-options"></ul>
-        <button id="check-answer">Check Answer</button>
-        <p id="result"></p>
-        <p>Score: <span id="correct-score">0</span> / <span id="total-question">10</span></p>
-        <button id="play-again" class="hidden">Play Again</button>
-    </section>
 </main>
 </body>
 </html>

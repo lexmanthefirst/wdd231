@@ -49,11 +49,13 @@
     background: var(--glass-bg);
     backdrop-filter: blur(16px);
     box-shadow: 0 16px 64px rgba(0, 0, 0, 0.1);
+    font-family: var(--secondary-font);
 }
 
 dialog::backdrop {
     background: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
 #closeModal{
 position: absolute;
@@ -71,6 +73,7 @@ position: absolute;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease-in-out; 
+ 
 }
 #closeModal:hover{
   transform: rotate(360deg);
