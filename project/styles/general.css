@@ -13,16 +13,20 @@
   --secondary-font:"Inter", sans-serif;
   --menu-bar-light: #000;
   --glass-bg: rgba(255, 255, 255, 0.9);
+  --border-color: #8D8D8D;
+  --border-color-focus: #000
 }
 
 [data-theme="dark"] {
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --bg-light: #0f172a;
-  --card-bg: #1e293b;
+  --card-bg: linear-gradient(to right, #141e30, #243b55);
   --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   --menu-bar-light: #fff;
   --glass-bg: rgba(255, 255, 255, 0.9);
+  --border-color: #8D8D8D;
+  --border-color-focus: #fff
 }
   *{
     padding: 0;

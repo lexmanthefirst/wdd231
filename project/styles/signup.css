@@ -38,30 +38,36 @@
     margin-bottom: 0.5rem;
     font-family: var(--secondary-font);
 }
-label{
-    color: var(--text-primary);
-    font-size: 1rem;
-   -webkit-flow-into: var(--secondary-font);
-}
 
 .input-group {
     margin-bottom: .5rem;
+}
+
+
+label{
+    color: #8D8D8D;
+    font-size: 1rem;
+    font-family: var(--secondary-font);
+
 }
 
 input {
     color: var(--text-primary);
     width: 100%;
     padding: 0.875rem;
-    border: 1px solid var(--border-color);
-    border-radius: 0.75rem;
+    border: none;
+    border-bottom: 1px solid var(--border-color);
+    background: transparent;
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
-
+.input-group:focus-within label {
+    color: var(--border-color-focus);
+}
 input:focus {
     outline: none;
-    border-color: var(--primary-light);
-    box-shadow: var(--card-shadow);
+    border-color: var(--border-color-focus);
+    background: transparent;
 }
 .options {
     display: flex;
