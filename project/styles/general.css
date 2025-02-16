@@ -91,7 +91,7 @@
   
   .bar2 {
     width: 15px;
-    height: 3px;
+    height: 2px;
     background-color: var(--menu-bar-light);
     margin: 8px 0;
     transition: 0.25s;
