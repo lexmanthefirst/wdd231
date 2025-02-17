@@ -25,9 +25,8 @@ darkMode();
       if(daysDifference < 1) {
         greeting.textContent = "Welcome Back!"
       } else {
-        greeting.textContent =  `You last visited ${daysDifference} day${daysDifference > 1 ? 's' : ''} ago.`;
+        greeting.textContent =  `You last logged in ${daysDifference} day${daysDifference > 1 ? 's' : ''} ago.`;
       }
     }
     localStorage.setItem("lastVisit", now.toString());
   }
-  darkMode();
