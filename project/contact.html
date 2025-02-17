@@ -51,7 +51,7 @@
         <li  class="current-menu-item"><a href="./index.html">Home</a></li>
       <li><a href="./features.html" title="Features">Features</a></li>
       <li><a href="./contact.html" title="Contact us" aria-current="true">Contact Us</a></li>
-      <li class="login-btn"><a href="./login.html" title="Login">Login</a></li>
+      <li class="login-btn"><a href="./login.html" title="Sign in to account">Sign In</a></li>
     </ul>
   </nav>
 <main>
@@ -76,7 +76,7 @@
         </div>
         <div class="contact-form-container">
             <h2>Send us a Message</h2>
-            <form id="contactForm" onsubmit="event.preventDefault(); submitForm(event)">
+            <form id="contactForm" method="GET" action="thankyou.html">
                 <div class="input-group">
                     <label for="first_name">First Name
                         <input type="text" id="first_name" name="first_name" autocomplete="given-name" required>

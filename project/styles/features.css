@@ -1,5 +1,10 @@
 
-  
+  main h1{
+    font-size: 2.5rem;
+    margin-left: 3rem;
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+  }
   /* Features Section */
   #features {
     display: flex;
