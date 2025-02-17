@@ -45,7 +45,7 @@
 
 
 label{
-    color: #8D8D8D;
+    color: var(--border-color-focus);
     font-size: 1rem;
     font-family: var(--secondary-font);
 
@@ -61,9 +61,9 @@ input {
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
-.input-group:focus-within label {
+/* .input-group:focus-within label {
     color: var(--border-color-focus);
-}
+} */
 input:focus {
     outline: none;
     border-color: var(--border-color-focus);
@@ -80,8 +80,8 @@ input:focus {
 
 .signup-btn {
     border: 1px solid #fcc822;
-    background: none;
-    color: #fcc822;
+    background: var(--btn-bg);
+    color: #fff;
     width: 100%;
     padding: 1rem;
     border-radius: 0.75rem;
@@ -126,8 +126,5 @@ input:focus {
     }
     .signup-container{
         width: 100%;
-    }
-    .theme-toggle {
-        top: 2rem;
     }
 }

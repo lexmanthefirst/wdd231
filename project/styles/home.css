@@ -56,16 +56,11 @@
   text-align: center;
   transition: 0.5s;
   background-size: 200% auto;
-  color: white;
+  color: #fff;
   display: block;
   transition: transform 0.4s ease;
-  border: none;
-  background-image: linear-gradient(
-    to right,
-    #f7971e 0%,
-    #ffd200 51%,
-    #f7971e 100%
-  );
+  border: 1px solid #fcc822;
+  background: var(--btn-bg);
   width: 8rem;
   height: 2.5rem;
   font-weight: 600;
@@ -81,16 +76,20 @@
 }
 
 .learn-more-btn {
-  border: 1px solid var(--btn-hover-font-color);
-  background: transparent;
-  color: #fcc822;
-  font-family: var(--paragraph-font);
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 0.87rem;
-  font-weight: 600;
+  margin: 10px;
+  padding: 0.5rem;
   text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #000;
+  display: block;
+  transition: transform 0.4s ease;
+  border: 1px solid #000;
+  background:var(--glass-bg);
   width: 8rem;
+  height: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 @media (min-width: 64rem) {

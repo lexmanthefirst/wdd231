@@ -14,7 +14,14 @@
   --menu-bar-light: #000;
   --glass-bg: rgba(255, 255, 255, 0.9);
   --border-color: #8D8D8D;
-  --border-color-focus: #000
+  --border-color-focus: #000;
+  --btn-color: #fff;
+  --btn-bg: linear-gradient(
+    to right,
+    #f7971e 0%,
+    #ffd200 51%,
+    #f7971e 100%
+  );
 }
 
 [data-theme="dark"] {
@@ -26,7 +33,9 @@
   --menu-bar-light: #fff;
   --glass-bg: rgba(255, 255, 255, 0.9);
   --border-color: #8D8D8D;
-  --border-color-focus: #fff
+  --border-color-focus: #fff;
+  --btn-color: #fff;
+  --btn-bg: linear-gradient(to right, #141e30, #243b55);
 }
   *{
     padding: 0;
@@ -172,8 +181,8 @@
   }
   .login-btn {
     border: 1px solid #fcc822;
-    background: none;
-    color: #fcc822;
+    background: var(--btn-bg);
+    color: #fff;
     font-family: var(--secondary-font);
     font-weight: 500;
   }
