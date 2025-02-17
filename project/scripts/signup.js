@@ -1,4 +1,4 @@
-import { darkMode } from './dark-mode.js';
+import { darkMode } from './app.mjs';
 
 //Call darkMode function
   darkMode();
