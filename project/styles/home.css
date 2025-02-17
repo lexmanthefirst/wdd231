@@ -35,7 +35,7 @@
   background-clip: text;
 }
 
-.call-to-action p {
+.call-to-action h2 {
   font-size: 1.5rem;
   color: var(--secondary-font-color);
   text-align: left;
@@ -65,6 +65,7 @@
   height: 2.5rem;
   font-weight: 600;
   letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
 .cta-btn:hover {
@@ -90,6 +91,7 @@
   height: 2.5rem;
   font-weight: 600;
   letter-spacing: -0.02em;
+  text-decoration: none;
 }
 
 @media (min-width: 64rem) {
