@@ -35,9 +35,35 @@
 <body>
     
 <main>
-  <div>
-    <h1 class="float-message">Coming Soon!</h1>
+  <div class="previous-page-toggle">
+    <button id="previous-btn" aria-label="Goto Previous page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-left"><path d="M6 8L2 12L6 16"/><path d="M2 12H22"/></svg></button>
   </div>
+  <div class="quiz-container" id="quiz-container">
+    <div class="quiz-header">
+        <h1>QuizGrad</h1>
+        <div class="score-container">
+            Score: <span id="correct-score">0</span>/<span id="total-question">10</span>
+        </div>
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress" style="width: 10%"></div>
+    </div>
+
+    <div class="question-box">
+        <div class="question-text" id="question"></div>
+        <div class="options-grid" id="options"></div>
+    </div>
+
+    <div class="controls">
+        <div class="flex-gap">
+            <button class="btn btn-primary" id="check-answer">Check Answer</button>
+            <button class="btn btn-secondary hidden" id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <div id="result" class="result-message"></div>
+</div>
   <div class="theme-toggle">
     <button id="theme-btn" aria-label="Toggle theme">🌙</button>
   </div>
