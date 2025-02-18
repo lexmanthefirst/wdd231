@@ -34,6 +34,11 @@ body {
   align-items: center;
   margin-bottom: 1rem;
 }
+.quiz-header h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: var(--secondary-font);
+}
 
 .score-container {
   background: var(--btn-bg);
@@ -64,7 +69,7 @@ body {
   background: white;
   border: 2px solid #e2e8f0;
   border-radius: 1rem;
-  padding: 1rem;
+  padding: .5rem;
   text-align: left;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -92,9 +97,11 @@ body {
   padding: 1rem 2rem;
   border: none;
   border-radius: 1rem;
+  font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
   transition: transform 0.2s ease;
+
 }
 
 .btn-primary {
@@ -155,8 +162,14 @@ body {
   cursor: pointer;
   color: var(--btn-color-focus);
 }
+label{
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: var(--secondary-font);
+}
 select {
   background: var(--bg-light);
+  font-size: 0.875rem;
   color: var(--btn-color);
   padding: 0.75rem 1.5rem;
   border-radius: 1rem;
@@ -173,6 +186,7 @@ select > option {
 #start-quiz {
   background: var(--btn-bg);
   color: var(--btn-color);
+  font-size: 0.875rem;
   padding: 1rem;
   border: none;
   border-radius: 1rem;
@@ -192,10 +206,10 @@ select > option {
     font-size: 1.25rem;
   }
   .quiz-options {
-    padding: 1.25rem;
+    padding: .75rem;
   }
   .btn {
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem;
   }
   .previous-page-toggle {
     left: 1rem;
