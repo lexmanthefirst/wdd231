@@ -1,3 +1,7 @@
+import { CopyWrite } from "./app.mjs";
+//Call copywrite
+CopyWrite();
+
 const urlParams = new URLSearchParams(window.location.search);
 
 document.getElementById("firstName").textContent = urlParams.get("first_name") || "Not provided";

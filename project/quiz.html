@@ -39,6 +39,21 @@
     <button id="previous-btn" aria-label="Goto Previous page"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-left"><path d="M6 8L2 12L6 16"/><path d="M2 12H22"/></svg></button>
   </div>
   <div class="quiz-container" id="quiz-container">
+    
+    <div class="topic-selection" id="topic-selection">
+     
+      <label for="category-select">Choose a Topic:</label>
+      <select id="category-select">
+          <option value="">Select a Topic</option>
+          <option value="9">General Knowledge</option>
+          <option value="17">Science & Nature</option>
+          <option value="18">Computers</option>
+          <option value="22">Geography</option>
+          <option value="23">History</option>
+          <option value="27">Animals</option>
+      </select>
+      <button id="start-quiz">Start Quiz</button>
+    </div>
     <div class="quiz-header">
         <h1>QuizGrad</h1>
         <div class="score-container">
@@ -52,7 +67,7 @@
 
     <div class="question-box">
         <div class="question-text" id="question"></div>
-        <div class="options-grid" id="options"></div>
+        <div class="quiz-options" id="options"></div>
     </div>
 
     <div class="controls">
@@ -69,6 +84,11 @@
   </div>
 
 </main>
+
+<footer>
+  <p id="copywrite"></p>
+  <p id="modified"></p>
+</footer>
 </body>
 </html>
 

@@ -1,4 +1,4 @@
-import {toggleMenu, darkMode } from "./app.mjs";
+import {toggleMenu, darkMode, CopyWrite } from "./app.mjs";
 // Scroll Animations
 const featureCards = document.querySelectorAll(".feature-card");
 
@@ -77,6 +77,7 @@ featureModal.addEventListener("click", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
   fetchFeatures();
   toggleMenu();
+  CopyWrite();
 });
 
 //Call darkMode function
