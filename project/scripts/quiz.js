@@ -33,10 +33,10 @@ checkBtn.addEventListener("click", checkAnswer);
 playAgainBtn.addEventListener("click", restartQuiz);
 
 async function loadQuestion() {
-// if (!selectedCategory) {
-//   alert("Please select a topic first!");
-//   return;
-// }
+if (!selectedCategory) {
+  alert("Please select a topic first!");
+  return;
+}
 try{
     const APIUrl = `https://opentdb.com/api.php?amount=1&category=${selectedCategory}`;
     const response = await fetch(APIUrl);
