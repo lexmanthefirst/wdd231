@@ -56,6 +56,10 @@ body {
   font-size: 1.5rem;
   line-height: 1.4;
   margin-bottom: 1.5rem;
+  max-width: 100%;
+  word-wrap: break-word;
+  hyphens: auto;
+  font-family: var(--paragraph-font);
 }
 
 .quiz-options {
@@ -184,6 +188,26 @@ select > option {
   background: var(--bg-light);
 }
 #start-quiz {
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  font-size: 0.875rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 10rem;
+}
+
+.next-prev-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 3rem;
+}
+#prev-question, #next-question{
   background: var(--btn-bg);
   color: var(--btn-color);
   font-size: 0.875rem;
